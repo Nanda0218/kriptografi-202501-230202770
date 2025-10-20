@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
+  <diagram name="Halaman-1" id="zuyrupLTT-CPSazN1A2q">
+    <mxGraphModel dx="692" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NFSWX6t4pxRt78rmoUMz-1" value="Nanda Erdi Pratama" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="80" y="170" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NFSWX6t4pxRt78rmoUMz-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NFSWX6t4pxRt78rmoUMz-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="269.5" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Of2E3nkpU7_5jg4XSrDo-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NFSWX6t4pxRt78rmoUMz-4" target="Of2E3nkpU7_5jg4XSrDo-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NFSWX6t4pxRt78rmoUMz-4" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=#006EAF;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=light-dark(#3B8DF1,#3F85DB);shape=mxgraph.mscae.enterprise.key_permissions;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="249" y="260" width="41" height="78.85" as="geometry" />
+        </mxCell>
+        <mxCell id="NFSWX6t4pxRt78rmoUMz-5" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=light-dark(#3B8DF1,#3F85DB);shape=mxgraph.mscae.enterprise.lock_unlocked" parent="1" vertex="1">
+          <mxGeometry x="530" y="180" width="37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NFSWX6t4pxRt78rmoUMz-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.64;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="NFSWX6t4pxRt78rmoUMz-4" target="NFSWX6t4pxRt78rmoUMz-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NFSWX6t4pxRt78rmoUMz-12" value="Sfsif Jwin Uwfyfrf" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="370" y="170" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NFSWX6t4pxRt78rmoUMz-13" value="&lt;div&gt;Nanda Erdi Pratama&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="600" y="170" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NFSWX6t4pxRt78rmoUMz-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NFSWX6t4pxRt78rmoUMz-14" target="NFSWX6t4pxRt78rmoUMz-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NFSWX6t4pxRt78rmoUMz-14" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=light-dark(#3B8DF1,#3F85DB);shape=mxgraph.mscae.enterprise.key_permissions" parent="1" vertex="1">
+          <mxGeometry x="528" y="260" width="41" height="78.85" as="geometry" />
+        </mxCell>
+        <mxCell id="BPn-r2Ww-x8prkHcFjIc-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.318;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="NFSWX6t4pxRt78rmoUMz-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="204.98000000000002" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BPn-r2Ww-x8prkHcFjIc-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.318;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="NFSWX6t4pxRt78rmoUMz-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="289" y="204.98000000000002" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BPn-r2Ww-x8prkHcFjIc-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.033;entryY=0.321;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="NFSWX6t4pxRt78rmoUMz-5" target="NFSWX6t4pxRt78rmoUMz-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BPn-r2Ww-x8prkHcFjIc-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.036;entryY=0.327;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="NFSWX6t4pxRt78rmoUMz-5" target="NFSWX6t4pxRt78rmoUMz-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Of2E3nkpU7_5jg4XSrDo-1" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;fillColor=#3B8DF1;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;shape=mxgraph.gcp2.lock" parent="1" vertex="1">
+          <mxGeometry x="251" y="180" width="39" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
