@@ -1,9 +1,9 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
+Minggu ke-: 4
 Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Nama: [Nanda Erdi Pratama]  
+NIM: [230202770]  
+Kelas: [5IKRB]  
 
 ---
 
