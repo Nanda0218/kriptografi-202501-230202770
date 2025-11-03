@@ -18,8 +18,13 @@ Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.)
+Teori Dasar
+
+Entropi kunci mengukur tingkat keacakan dan ketidakpastian suatu kunci kriptografi. Kunci yang memiliki entropi tinggi berarti sangat sulit ditebak karena terdapat banyak kemungkinan kandidat kunci yang sama-sama mungkin. Sebaliknya, entropi rendah menunjukkan pola atau kelemahan dalam pembuatan kunci, membuatnya rentan terhadap serangan bahkan sebelum penyerangan dimulai. Konsep ini membantu mengevaluasi kekuatan dasar suatu sistem kriptografi. Unicity distance adalah jumlah minimum cipherteks yang dibutuhkan agar secara teori hanya ada satu kunci yang dapat menghasilkan plainteks yang bermakna. Setelah melewati jarak unik ini, penyerang dapat menentukan kunci yang benar dengan pasti. Konsep ini menggambarkan batas praktis dimana sistem kriptografi mulai kehilangan keamanannya ketika cukup banyak data terenkripsi yang berhasil dikumpulkan.
+
+Contoh Cipher Klasik dan Aritmetika Modular
+
+Cipher klasik seperti Caesar Cipher bekerja dengan menggeser setiap huruf plainteks berdasarkan nilai kunci. Aritmetika modular digunakan untuk memastikan pergeseran tetap berada dalam rentang huruf alfabet. Misalnya, dengan kunci 3, huruf A digeser menjadi D, B menjadi E, dan seterusnya. Ketika mencapai Z, perhitungan akan kembali ke awal alfabet. Pada Caesar Cipher yang hanya memiliki 26 kemungkinan kunci, sistem ini sangat lemah. Dengan menganalisis beberapa karakter cipherteks saja, penyerang sudah dapat menentukan kunci yang digunakan. Hal ini terjadi karena unicity distance-nya sangat pendek, menunjukkan bahwa cipher sederhana seperti ini mudah dipecahkan dengan analisis frekuensi karakter.
 
 ---
 
