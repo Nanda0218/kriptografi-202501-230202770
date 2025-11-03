@@ -18,8 +18,8 @@ Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+(Ringkas teori relevan (cukup 2–3 paragraf).
+Contoh: definisi cipher klasik, konsep modular aritmetika, dll.)
 
 ---
 
