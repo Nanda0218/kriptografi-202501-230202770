@@ -156,13 +156,17 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
+- Pertanyaan 1: Kelemahan Utama Caesar Cipher dan Vigenère Cipher
+Caesar Cipher: Kelemahan utamanya adalah ruang kunci yang sangat kecil (hanya 25 kemungkinan kunci), sehingga mudah diserang dengan brute force.
+Vigenère Cipher: Meski lebih kuat dari Caesar, kelemahan utamanya terletak pada pengulangan kunci. Jika panjang kunci dapat diketahui (misalnya dengan Kasiski examination), cipher ini dapat dipecah menjadi beberapa Caesar cipher yang kemudian mudah diserang dengan analisis frekuensi.
+- Pertanyaan 2: Karena cipher klasik (terutama substitusi monoalfabetik) mempertahankan frekuensi karakter dari bahasa aslinya. Dalam sebuah bahasa, setiap huruf memiliki pola frekuensi kemunculan yang statis dan dapat diprediksi (contoh: dalam bahasa Inggris, 'E' adalah huruf yang paling sering muncul). Cipher tersebut hanya menggeser atau mengganti huruf tanpa menghilangkan pola statistik ini, sehingga penyerang dapat mencocokkan frekuensi huruf dalam ciphertext dengan frekuensi huruf dalam bahasa target untuk menemukan kunci substitusinya.
+- Pertanyaan 3: Cipher Substitusi memiliki kelebihan karena dapat menyembunyikan hubungan langsung antara huruf plaintext dan ciphertext. Namun, kelemahan utamanya adalah sangat rentan terhadap analisis frekuensi karena pola statistik bahasa asli tetap terbawa dalam ciphertext.
+Cipher Transposisi unggul karena dapat menghancurkan pola frekuensi karakter tunggal dengan mengacak urutan huruf. Akan tetapi, cipher ini tetap mempertahankan distribusi frekuensi gabungan (seperti digram dan trigram) sehingga masih rentan terhadap analisis frekuensi yang lebih canggih.
 )
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Cipher klasik seperti Caesar dan Vigenère terbukti rentan karena mempertahankan pola statistik bahasa asli, sehingga mudah dipecahkan dengan analisis frekuensi. Cipher transposisi sedikit lebih unggul dengan mengacak urutan huruf, namun tetap meninggalkan jejak statistik yang dapat dianalisis. Secara keseluruhan, cipher-cipher ini tidak lagi aman untuk penggunaan praktis karena ketergantungannya pada kerahasiaan algoritma dan kerentanan terhadap metode kriptanalisis modern.
 
 ---
 
@@ -175,12 +179,12 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+```
+commit 934821b8a524773fc90e38e1f5dbcc87b53f02ef (HEAD -> main, origin/main)
+Author: Nanda0218 <nandaerdipratama29@gmail.com>
+Date:   Tue Nov 4 13:38:34 2025 +0700
+
+    week5-cipher-klasik
+
 ```
