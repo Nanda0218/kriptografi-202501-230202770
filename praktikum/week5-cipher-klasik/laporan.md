@@ -18,8 +18,9 @@ Menjelaskan kelemahan algoritma kriptografi klasik.
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Teori Cipher Klasik
+
+Cipher klasik adalah sistem kriptografi tradisional yang bekerja pada karakter individual (biasa huruf alfabet) menggunakan transformasi sederhana tanpa memerlukan komputasi kompleks. Dua kategori utamanya adalah cipher substitusi (mengganti setiap huruf plaintext dengan huruf ciphertext) dan cipher transposisi (mengubah urutan huruf plaintext tanpa mengubah identitas hurufnya). Cipher-cipher ini umumnya bersifat simetris, menggunakan kunci yang sama untuk proses enkripsi dan dekripsi. Caesar cipher merupakan cipher substitusi paling sederhana yang menggunakan konsep modular aritmetika. Setiap huruf plaintext digeser sejumlah posisi tetap dalam alfabet (misal: geser 3, A→D, B→E). Operasi modular (mod 26) memastikan pergeseran tetap dalam rentang alfabet. Sementara Vigenère cipher memperluas konsep ini menggunakan kunci berbasis kata/frasa yang menciptakan multiple shift values, sehingga menghasilkan polyalphabetic substitution yang lebih kuat daripada Caesar cipher. Cipher transposisi mengacak plaintext dengan menyusunnya dalam matriks atau pola tertentu berdasarkan kunci, kemudian membaca ulang sesuai aturan transposisi. Contohnya columnar transposition yang menulis plaintext per kolom kemudian membaca per baris. Keamanan cipher klasik secara umum telah terpecahkan dengan teknik analisis frekuensi dan metode kriptanalisis modern, namun tetap menjadi fondasi penting dalam memahami prinsip-prinsip kriptografi.
 
 ---
 
