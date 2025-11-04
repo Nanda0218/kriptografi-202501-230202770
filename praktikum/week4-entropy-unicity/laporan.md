@@ -50,9 +50,25 @@ Contoh format:
 Gunakan blok kode:
 
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+import math
+
+def entropy(keyspace_size):
+    return math.log2(keyspace_size)
+
+print("Entropy ruang kunci 26 =", entropy(26), "bit")
+print("Entropy ruang kunci 2^128 =", entropy(2**128), "bit")
+def unicity_distance(HK, R=0.75, A=26):
+    return HK / (R * math.log2(A))
+
+HK = entropy(26)
+print("Unicity Distance untuk Caesar Cipher =", unicity_distance(HK))
+def brute_force_time(keyspace_size, attempts_per_second=1e6):
+    seconds = keyspace_size / attempts_per_second
+    days = seconds / (3600*24)
+    return days
+
+print("Waktu brute force Caesar Cipher (26 kunci) =", brute_force_time(26), "hari")
+print("Waktu brute force AES-128 =", brute_force_time(2**128), "hari")
 ```
 )
 
@@ -80,13 +96,16 @@ Entropi mengukur tingkat keacakan dan ketidakpastian dalam sebuah kunci.
 - Entropi tinggi = Kunci sangat acak, tidak dapat diprediksi, dan sulit ditebak. Ini berarti ruang kunci yang mungkin sangat besar, sehingga meningkatkan kekuatan kriptografis.
 - Entropi rendah = Kunci memiliki pola atau predictability, yang melemahkan keamanan sistem karena lebih mudah diserang (misalnya, melalui dictionary attack atau brute force pada ruang kunci yang kecil).
 Contoh: Kunci 128-bit dengan entropi penuh memiliki 2¹²⁸ kemungkinan kombinasi, sementara kunci dengan entropi efektif hanya 40-bit jauh lebih lemah meskipun panjangnya 128-bit.
-- Pertanyaan 2: 
-- Pertanyaan 3: 
+- Pertanyaan 2: Unicity distance penting karena menunjukkan batas teoritis di mana ciphertext memberikan informasi yang cukup untuk memecahkan kunci secara unik. Unicity distance pendek = Cipher kurang aman, karena penyerang hanya perlu menganalisis sejumlah kecil ciphertext untuk menemukan kunci yang benar. Unicity distance panjang = Cipher lebih aman, karena penyerang membutuhkan ciphertext yang sangat banyak untuk memiliki peluang memecahkan kunci. Dengan kata lain, unicity distance mengukur kerentanan cipher terhadap analisis statistik: semakin pendek jaraknya, semakin mudah cipher tersebut dibobol melalui analisis cryptoanalitik.
+- Pertanyaan 3: Brute force tetap menjadi ancaman karena beberapa alasan praktis:
+Kemajuan Teknologi Komputasi: Kekuatan prosesor, GPU, dan komputasi kuantum terus meningkat, memperpendek waktu yang dibutuhkan untuk mencoba semua kemungkinan kunci. Implementasi yang Tidak Sempurna: Kesalahan dalam pembuatan kunci (seperti entropy rendah) atau kelemahan dalam protokol dapat memperkecil ruang kunci yang efektif. Sumber Daya Komputasi Terdistribusi: Penyerang dapat memanfaatkan banyak komputer secara paralel (botnet, cloud computing) untuk mempercepat proses brute force. Kunci yang Lemah: Pengguna mungkin memilih kunci yang pendek atau mudah ditebak, mengurangi waktu yang dibutuhkan untuk brute force. Nature of Brute Force - Serangan ini selalu mungkin dilakukan selama ruang kunci terbatas, dan hanya masalah waktu serta sumber daya komputasi.
+
 )
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+
+Entropi kunci yang tinggi mutlak diperlukan untuk memaksimalkan kekuatan kriptografis, karena menentukan seberapa tidak terduga sebuah kunci. Unicity distance yang panjang menunjukkan cipher lebih tahan terhadap analisis statistik, memperkuat keamanannya. Namun, ancaman brute force tetap nyata akibat kemajuan komputasi dan implementasi yang lemah, sehingga panjang kunci harus selalu melebihi kapabilitas komputasi penyerang.
 
 ---
 
