@@ -66,7 +66,7 @@ def encrypt(text, key):
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
+![Hasil Eksekusi](Screenshots/Hasil.png)
 ![Hasil Input](screenshots/input.png)
 ![Hasil Output](screenshots/output.png)
 )
@@ -75,8 +75,13 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
+- Pertanyaan 1: Arti Nilai Entropi dalam Kekuatan Kunci:
+Entropi mengukur tingkat keacakan dan ketidakpastian dalam sebuah kunci. 
+- Entropi tinggi = Kunci sangat acak, tidak dapat diprediksi, dan sulit ditebak. Ini berarti ruang kunci yang mungkin sangat besar, sehingga meningkatkan kekuatan kriptografis.
+- Entropi rendah = Kunci memiliki pola atau predictability, yang melemahkan keamanan sistem karena lebih mudah diserang (misalnya, melalui dictionary attack atau brute force pada ruang kunci yang kecil).
+Contoh: Kunci 128-bit dengan entropi penuh memiliki 2¹²⁸ kemungkinan kombinasi, sementara kunci dengan entropi efektif hanya 40-bit jauh lebih lemah meskipun panjangnya 128-bit.
+- Pertanyaan 2: 
+- Pertanyaan 3: 
 )
 ---
 
