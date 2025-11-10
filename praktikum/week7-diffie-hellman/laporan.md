@@ -1,14 +1,19 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
+Minggu ke-: 7 
 Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Nama: [Nanda Erdi Pratama]
+NIM: [230202770]
+Kelas: [5IKRB]
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Tujuan Pembelajaran
+Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:  
+1. Melakukan simulasi protokol **Diffie-Hellman** untuk pertukaran kunci publik.  
+2. Menjelaskan mekanisme pertukaran kunci rahasia menggunakan bilangan prima dan logaritma diskrit.  
+3. Menganalisis potensi serangan pada protokol Diffie-Hellman (termasuk serangan **Man-in-the-Middle / MITM**).  
+
 
 ---
 
