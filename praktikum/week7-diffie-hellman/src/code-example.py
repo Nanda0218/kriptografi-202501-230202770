@@ -1,44 +1,20 @@
 import random
 
-# Parameter publik yang disepakati
+# parameter umum (disepakati publik)
 p = 23  # bilangan prima
-g = 5   # generator modulo p
+g = 5   # generator
 
-print("=== PROTOCOL DIFFIE-HELLMAN KEY EXCHANGE ===")
-print(f"Parameter publik: p = {p}, g = {g}")
-print()
+# private key masing-masing pihak
+a = random.randint(1, p-1)  # secret Alice
+b = random.randint(1, p-1)  # secret Bob
 
-# Generate private keys
-a = random.randint(1, p-1)  # private key Alice
-b = random.randint(1, p-1)  # private key Bob
+# public key
+A = pow(g, a, p)
+B = pow(g, b, p)
 
-print(f"Private Key Alice (a): {a}")
-print(f"Private Key Bob (b): {b}")
-print()
+# exchange public key
+shared_secret_A = pow(B, a, p)
+shared_secret_B = pow(A, b, p)
 
-# Generate public keys
-A = pow(g, a, p)  # public key Alice: g^a mod p
-B = pow(g, b, p)  # public key Bob: g^b mod p
-
-print(f"Public Key Alice (A): {A}")
-print(f"Public Key Bob (B): {B}")
-print()
-
-# Pertukaran public key terjadi di sini
-# Alice mengirim A ke Bob, Bob mengirim B ke Alice
-
-# Hitung shared secret
-shared_secret_Alice = pow(B, a, p)  # Alice hitung: B^a mod p
-shared_secret_Bob = pow(A, b, p)    # Bob hitung: A^b mod p
-
-print("=== HASIL SHARED SECRET ===")
-print(f"Kunci bersama Alice: {shared_secret_Alice}")
-print(f"Kunci bersama Bob: {shared_secret_Bob}")
-print()
-
-# Verifikasi
-if shared_secret_Alice == shared_secret_Bob:
-    print("✅ SUKSES: Kunci bersama sama!")
-    print(f"Shared Secret: {shared_secret_Alice}")
-else:
-    print("❌ GAGAL: Kunci bersama berbeda!")
+print("Kunci bersama Alice :", shared_secret_A)
+print("Kunci bersama Bob   :", shared_secret_B)
