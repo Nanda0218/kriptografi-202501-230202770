@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 7 
-Topik: [judul praktikum]  
+Topik: [Diffie-Hellman Key Exchange]
 Nama: [Nanda Erdi Pratama]
 NIM: [230202770]
 Kelas: [5IKRB]
