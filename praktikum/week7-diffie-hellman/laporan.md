@@ -164,9 +164,9 @@ Contoh:
 ---
 
 ## 10. Commit Log
-commit ff796d14b8731b80a735a9333f5f7dcdf19209f9 (HEAD -> main, origin/main, origin/HEAD)
+commit d94a70167315174d6d884fc72a3a36cbf4ad4975 (HEAD -> main, origin/main, origin/HEAD)
 Author: Nanda0218 <nandaerdipratama29@gmail.com>
-Date:   Tue Nov 11 13:06:45 2025 +0700
+Date:   Tue Nov 11 13:19:58 2025 +0700
 
     week7-diffie-hellman
 ```
