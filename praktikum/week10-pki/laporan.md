@@ -70,15 +70,52 @@ Hasil eksekusi program Caesar Cipher:
 
 ---
 
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+## 7. Jawaban Pertanyaan 
+- Pertanyaan 1: Fungsi utama Certificate Authority (CA) adalah bertindak sebagai pihak tepercaya yang memverifikasi identitas individu, organisasi, atau server sebelum mengeluarkan sertifikat digital. Sertifikat ini mengikat public key dengan identitas pemiliknya, sehingga penerima pesan atau pengguna layanan bisa yakin bahwa public key tersebut benar-benar milik pihak yang disebutkan.
+
+Dengan kata lain, CA memastikan bahwa komunikasi dan transaksi digital menjadi aman, autentik, dan terpercaya, karena penerima dapat memverifikasi keaslian public key pengirim menggunakan sertifikat yang diterbitkan dan ditandatangani secara digital oleh CA.
+
+Selain itu, CA juga membantu mendukung integritas, otentikasi, dan non-repudiation dalam sistem tanda tangan digital, sehingga pengirim tidak bisa menyangkal pesan yang telah ditandatangani dengan private key mereka.
+
+- Pertanyaan 2: Self-signed certificate tidak cukup untuk sistem produksi karena beberapa alasan keamanan dan kepercayaan:
+
+1. Tidak ada pihak tepercaya (trusted third party)
+* Self-signed certificate dibuat dan ditandatangani sendiri oleh pemiliknya.
+* Pihak penerima tidak bisa yakin** apakah public key benar-benar milik pengirim atau server, karena tidak diverifikasi oleh pihak tepercaya (CA).
+
+2. Masalah kepercayaan browser atau sistem
+* Browser, sistem operasi, atau aplikasi biasanya tidak mempercayai self-signed certificate secara default.
+* Akibatnya, pengguna akan menerima peringatan keamanan (misal “Not Secure” di browser).
+* Ini membuat self-signed certificate tidak cocok untuk layanan publik atau produksi.
+
+3. Rentan terhadap serangan Man-in-the-Middle (MITM)
+* Karena penerima tidak punya jaminan identitas yang sah, penyerang bisa menyisipkan certificate palsu dan berpura-pura sebagai server asli.
+* Dengan CA, sertifikat diverifikasi sehingga serangan MITM menjadi jauh lebih sulit.
+
+- Pertanyaan 3: PKI (Public Key Infrastructure) mencegah serangan Man-in-the-Middle (MITM) dalam komunikasi TLS/HTTPS melalui mekanisme sertifikat digital dan otentikasi pihak tepercaya. Berikut penjelasannya:
+
+1. Verifikasi identitas server
+* Server TLS/HTTPS memiliki sertifikat digital yang diterbitkan oleh Certificate Authority (CA) tepercaya.
+* Sertifikat ini berisi public key server dan identitas server (misal domain).
+* Saat klien (browser) terhubung ke server, klien memeriksa:
+  1. Sertifikat valid dan belum kadaluarsa.
+  2. Sertifikat ditandatangani oleh CA yang dipercaya.
+  3. Nama domain pada sertifikat sesuai dengan server yang dikunjungi.
+* Jika salah satu pemeriksaan gagal, klien menolak koneksi.
+
+ 2. Enkripsi kunci publik
+* Setelah sertifikat diverifikasi, klien menggunakan public key server untuk menukar kunci sesi (session key) secara aman.
+* Hanya server dengan private key yang sesuai dengan public key di sertifikat yang bisa mendekripsi kunci sesi.
+
+3. Mencegah MITM
+* Penyerang yang mencoba menyisipkan diri di tengah (MITM) tidak bisa:
+  1. Memalsukan sertifikat yang valid dari CA tepercaya.
+  2. Mendekripsi kunci sesi tanpa private key server asli.
+* Karena itu, komunikasi tetap terenkripsi dan identitas server terjamin.
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan percobaan pembuatan sertifikat digital self-signed, dapat disimpulkan bahwa PKI menyediakan kerangka kerja untuk mengikat public key dengan identitas pemiliknya melalui sertifikat digital, sehingga memungkinkan autentikasi dan enkripsi data. Certificate Authority (CA) berperan sebagai pihak tepercaya yang memverifikasi identitas sebelum sertifikat diterbitkan, memastikan komunikasi lebih aman. Self-signed certificate dapat digunakan untuk percobaan, tetapi untuk sistem produksi diperlukan sertifikat dari CA tepercaya agar integritas dan kepercayaan terjamin.
 
 ---
 
@@ -91,12 +128,11 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+```
+commit 71511175df6992d7bfb2a2b725def0a34b0f9fff (HEAD -> main, origin/main, origin/HEAD)
+Author: Nanda0218 <nandaerdipratama29@gmail.com>
+Date:   Wed Dec 10 14:56:50 2025 +0700
+
+    week10-pki
 ```
