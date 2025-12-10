@@ -1,14 +1,18 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 9 
+Topik: [Digital Signature (RSA/DSA)]  
+Nama: [Nanda Erdi Pratama]  
+NIM: [230202770]  
+Kelas: [5IKRB]  
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Tujuan Pembelajaran
+Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:  
+1. Mengimplementasikan tanda tangan digital menggunakan algoritma RSA/DSA.  
+2. Memverifikasi keaslian tanda tangan digital.  
+3. Menjelaskan manfaat tanda tangan digital dalam otentikasi pesan dan integritas data.
 
 ---
 
