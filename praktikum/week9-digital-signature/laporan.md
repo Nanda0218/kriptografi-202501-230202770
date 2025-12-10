@@ -20,17 +20,7 @@ Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 
 Digital signature adalah teknik kriptografi yang digunakan untuk memastikan bahwa pesan atau dokumen digital benar-benar dibuat oleh pengirim yang sah dan tidak mengalami perubahan. Sistem ini menggunakan pasangan kunci asimetris: private key untuk menandatangani, dan public key untuk memverifikasi tanda tangan tersebut. Prosesnya selalu melibatkan fungsi hash yang mengubah pesan menjadi jejak digital unik, sehingga verifikasi dapat dilakukan dengan cepat dan aman.
 
-Pada RSA, keamanan digital signature bergantung pada kesulitan memecahkan masalah faktorisasi bilangan besar. Private key pemilik digunakan untuk membuat tanda tangan digital, sementara public key dapat digunakan siapa saja untuk memeriksa keasliannya. RSA dikenal sederhana dalam konsep dan umum digunakan karena kompatibel dengan banyak sistem keamanan modern.
-
-Sementara itu, DSA (Digital Signature Algorithm) mengandalkan kesulitan masalah logaritma diskret dalam aritmetika modular. DSA menghasilkan tanda tangan berupa dua nilai unik yang bergantung pada kunci privat dan hash pesan. Algoritma ini dirancang khusus oleh NIST dan banyak digunakan dalam standar keamanan seperti SSH. Baik RSA maupun DSA bertujuan memberikan autentikasi dan integritas, hanya berbeda pada dasar matematis dan cara menghasilkan tanda tangan.Berikut **ringkasan teori digital signature (RSA/DSA) tanpa rumus**, 2–3 paragraf sesuai permintaan:
-
----
-
-**Digital signature** adalah teknik kriptografi yang digunakan untuk memastikan bahwa pesan atau dokumen digital benar-benar dibuat oleh pengirim yang sah dan tidak mengalami perubahan. Sistem ini menggunakan pasangan kunci asimetris: **private key** untuk menandatangani, dan **public key** untuk memverifikasi tanda tangan tersebut. Prosesnya selalu melibatkan fungsi **hash** yang mengubah pesan menjadi jejak digital unik, sehingga verifikasi dapat dilakukan dengan cepat dan aman.
-
-Pada **RSA**, keamanan digital signature bergantung pada kesulitan memecahkan masalah faktorisasi bilangan besar. Private key pemilik digunakan untuk membuat tanda tangan digital, sementara public key dapat digunakan siapa saja untuk memeriksa keasliannya. RSA dikenal sederhana dalam konsep dan umum digunakan karena kompatibel dengan banyak sistem keamanan modern.
-
-Sementara itu, **DSA (Digital Signature Algorithm)** mengandalkan kesulitan masalah logaritma diskret dalam aritmetika modular. DSA menghasilkan tanda tangan berupa dua nilai unik yang bergantung pada kunci privat dan hash pesan. Algoritma ini dirancang khusus oleh NIST dan banyak digunakan dalam standar keamanan seperti SSH. Baik RSA maupun DSA bertujuan memberikan autentikasi dan integritas, hanya berbeda pada dasar matematis dan cara menghasilkan tanda tangan.
+Pada RSA, keamanan digital signature bergantung pada kesulitan memecahkan masalah faktorisasi bilangan besar. Private key pemilik digunakan untuk membuat tanda tangan digital, sementara public key dapat digunakan siapa saja untuk memeriksa keasliannya. RSA dikenal sederhana dalam konsep dan umum digunakan karena kompatibel dengan banyak sistem keamanan modern. 
 
 ---
 
