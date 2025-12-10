@@ -16,9 +16,13 @@ Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Berikut ringkasan teori relevan tentang Public Key Infrastructure (PKI) dan Certificate Authority (CA):
 
+Public Key Infrastructure (PKI) adalah sistem yang mendukung komunikasi aman di jaringan dengan menggunakan kriptografi kunci publik. PKI menyediakan kerangka untuk membuat, mendistribusikan, mengelola, dan mencabut sertifikat digital yang mengikat public key dengan identitas pemiliknya. Dengan PKI, pengguna dapat mengenkripsi pesan, memverifikasi tanda tangan digital, dan memastikan integritas serta autentikasi data dalam transaksi digital. PKI memanfaatkan konsep dasar kriptografi modern seperti RSA atau DSA, di mana pasangan kunci publik dan privat digunakan untuk enkripsi dan verifikasi tanda tangan digital.
+
+Certificate Authority (CA) adalah pihak tepercaya yang berperan sebagai otoritas dalam PKI. CA bertanggung jawab memverifikasi identitas individu, organisasi, atau server sebelum menerbitkan sertifikat digital. Sertifikat ini mengikat identitas pemilik dengan public key mereka dan ditandatangani secara digital oleh CA. Dengan demikian, penerima pesan dapat memverifikasi keaslian public key pengirim menggunakan sertifikat CA, sehingga sistem tanda tangan digital menjadi aman dan dapat dipercaya.
+
+PKI dan CA bekerja bersama untuk memastikan kerahasiaan, integritas, dan otentikasi komunikasi digital. Konsep ini sejalan dengan prinsip kriptografi klasik dan modern, termasuk penggunaan hash untuk memastikan integritas pesan dan operasi modular aritmetika dalam algoritma kunci publik seperti RSA. Dengan PKI, tanda tangan digital dan enkripsi kunci publik menjadi alat yang sah dan efektif untuk transaksi elektronik, komunikasi, dan keamanan data.
 ---
 
 ## 3. Alat dan Bahan
