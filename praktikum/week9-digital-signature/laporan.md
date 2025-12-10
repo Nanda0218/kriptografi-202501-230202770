@@ -69,15 +69,76 @@ Hasil eksekusi program Caesar Cipher:
 
 ---
 
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
----
+## 7. Jawaban Pertanyaan  
+- Pertanyaan 1: Perbedaan Utama
+1. Tujuan
+* Enkripsi RSA: menjaga kerahasiaan pesan agar hanya penerima yang bisa membaca.
+* Tanda tangan digital RSA: memastikan *keaslian* dan *integritas* pesan serta membuktikan siapa pengirimnya.
+
+2. Kunci yang Digunakan
+* Enkripsi RSA: pengirim memakai public key penerima untuk mengenkripsi, penerima membuka dengan private key.
+* Tanda tangan digital RSA: pengirim membuat tanda tangan dengan private key, penerima memverifikasi dengan public key pengirim.
+
+3. Apa yang Dilindungi
+* Enkripsi RSA melindungi isi pesan dari orang lain.
+* Tanda tangan digital RSA melindungi identitas pengirim dan memastikan pesan tidak dimodifikasi.
+
+4. Contoh Sederhana
+* Enkripsi: Alice ingin mengirim pesan rahasia ke Bob → ia mengenkripsi pakai public key Bob.
+* Tanda tangan: Alice ingin membuktikan bahwa pesan benar dari dia → ia menandatangani pakai private key-nya, dan Bob memverifikasi dengan public key Alice.
+
+- Pertanyaan 2: Tanda tangan digital menjamin integritas dan otentikasi pesan karena menggunakan kombinasi private key pengirim dan hash pesan. Mari kita uraikan dengan jelas:
+
+1. Integritas
+
+* Tanda tangan digital dibuat dari hash pesan, bukan dari pesan itu sendiri.
+* Hash adalah representasi unik dari isi pesan.
+* Saat penerima memverifikasi tanda tangan:
+  1. Penerima menghitung hash pesan yang diterima.
+  2. Membandingkannya dengan hash yang didekripsi dari tanda tangan menggunakan public key pengirim.
+* Jika pesan diubah sedikit saja, hash akan berbeda → verifikasi gagal.
+
+kesimpulan: Pesan tidak bisa diubah tanpa terdeteksi. Itu sebabnya integritas dijamin.
+
+2. Otentikasi
+
+* Tanda tangan dibuat menggunakan private key pengirim.
+* Hanya pemilik private key yang dapat membuat tanda tangan yang valid.
+* Penerima menggunakan public key pengirim untuk memverifikasi.
+* Jika verifikasi berhasil, penerima tahu dengan pasti siapa pengirimnya.
+
+Kesimpulan: Tanda tangan digital membuktikan identitas pengirim, sehingga otentikasi dijamin.
+
+- Pertanyaan 3:  Certificate Authority (CA) memiliki peran kritis dalam sistem tanda tangan digital modern, karena tanpa CA, tanda tangan digital sendiri hanya bisa membuktikan hubungan dengan kunci, bukan identitas nyata seseorang atau organisasi. Berikut penjelasan lengkapnya:
+
+1. Otentikasi Identitas
+* CA bertindak sebagai pihak percaya (trusted third party) yang memverifikasi identitas individu, perusahaan, atau server sebelum mengeluarkan sertifikat digital.
+* Sertifikat digital berisi public key dan informasi identitas pemilik (misal nama, organisasi, domain).
+* Dengan sertifikat dari CA, penerima bisa yakin bahwa public key benar-benar milik orang atau entitas yang disebutkan, bukan orang lain.
+
+2. Membuat Public Key Terpercaya*
+* Dalam tanda tangan digital, penerima perlu memverifikasi tanda tangan menggunakan public key pengirim.
+* Tanpa CA, penerima harus percaya begitu saja bahwa public key yang diterima memang milik pengirim.
+* CA menandatangani sertifikat digital pengirim dengan private key CA.
+* Penerima memverifikasi sertifikat ini menggunakan public key CA (yang sudah dipercaya), sehingga keaslian public key pengirim dijamin.
+
+3. Mendukung Integritas dan Non-repudiation
+* Sertifikat CA membantu memastikan integritas public key.
+* Jika public key diubah atau dipalsukan, verifikasi sertifikat CA gagal → penerima tahu ada masalah.
+* Ini juga mendukung non-repudiation, karena tanda tangan digital yang dibuat dengan private key pengirim dapat diverifikasi melalui sertifikat yang sah.
+
+4. Contoh Penggunaan
+* HTTPS / SSL: browser memverifikasi sertifikat server dari CA sebelum membuat koneksi aman.
+* Email S/MIME: email yang ditandatangani digital diverifikasi lewat sertifikat CA.
+* Dokumen digital: dokumen resmi yang ditandatangani digital bisa diverifikasi identitas penandatangan via CA.
+
+* CA adalah pihak tepercaya yang memverifikasi identitas dan mengikatnya ke public key.
+* Membuat sistem tanda tangan digital menjadi aman, dapat dipercaya, dan valid secara hukum.
+* Tanpa CA, tanda tangan digital hanya membuktikan hubungan dengan kunci, tapi tidak menjamin identitas pengirim.
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan percobaan dengan tanda tangan digital menggunakan RSA/DSA, dapat disimpulkan bahwa tanda tangan digital berhasil memastikan integritas dan otentikasi pesan, karena verifikasi berhasil untuk pesan asli dan gagal untuk pesan yang diubah. Selain itu, tanda tangan yang dibuat dengan private key hanya bisa diverifikasi menggunakan public key yang sesuai, sehingga membuktikan identitas pengirim.
+
 
 ---
 
@@ -90,12 +151,11 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+```
+commit cf11f0387e2c48ecb1bd91ca288565ecb0d3caa4 (HEAD -> main, origin/main, origin/HEAD)
+Author: Nanda0218 <nandaerdipratama29@gmail.com>
+Date:   Wed Dec 10 14:29:04 2025 +0700
+
+    week9-digital-signature
 ```
