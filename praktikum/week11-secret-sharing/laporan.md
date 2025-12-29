@@ -17,8 +17,13 @@ Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Teori Relevan Secret Sharing (Shamir’s Secret Sharing)
+
+Secret Sharing adalah teknik kriptografi untuk membagi sebuah rahasia (seperti kata sandi atau kunci enkripsi) menjadi beberapa bagian, yang kemudian dibagikan ke beberapa pihak. Rahasia asli hanya bisa dikembalikan jika sejumlah pihak tertentu bersedia menggabungkan bagian mereka. Shamir's Secret Sharing, yang dirancang oleh Adi Shamir, menggunakan prinsip dasar dari matematika: melalui dua titik dapat ditarik satu garis lurus, melalui tiga titik dapat dibuat satu parabola, dan seterusnya.
+
+Konsep intinya adalah rahasia dianggap sebagai sebuah titik tersembunyi dalam sebuah grafik polinomial. Setiap pihak yang mendapat bagian rahasia sebenarnya mendapatkan satu titik unik dalam grafik tersebut. Jika cukup banyak pihak berkumpul dan menggabungkan titik-titik mereka, mereka dapat menemukan bentuk grafik aslinya dan dengan demikian menemukan rahasia yang tersembunyi di dalamnya. Jika pihak yang berkumpul kurang dari jumlah yang ditentukan, mereka tidak akan memperoleh informasi apa pun tentang rahasia tersebut—bahkan sedikit pun. Sifat ini membuat skema ini sangat aman.
+
+Untuk memastikan perhitungan matematisnya bersih dan akurat, metode ini menggunakan sistem bilangan bulat dalam aritmetika modular (seperti sistem jam yang berputar). Mirip dengan cipher klasik sederhana seperti Caesar cipher yang menggeser huruf dalam alfabet (di mana huruf Z kembali ke A), aritmetika modular memastikan perhitungan tetap berada dalam batasan angka tertentu, mencegah hasil yang tidak terhingga dan menjaga kerahasiaan sempurna dari sistem bagi rahasia ini.
 
 ---
 
@@ -44,9 +49,18 @@ Contoh format:
 Gunakan blok kode:
 
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+from secretsharing import SecretSharer
+
+# Rahasia yang ingin dibagi
+secret = "KriptografiUPB2025"
+
+# Bagi menjadi 5 shares, ambang batas 3 (minimal 3 shares untuk rekonstruksi)
+shares = SecretSharer.split_secret(secret, 3, 5)
+print("Shares:", shares)
+
+# Rekonstruksi rahasia dari 3 shares
+recovered = SecretSharer.recover_secret(shares[:3])
+print("Recovered secret:", recovered)
 ```
 )
 
@@ -60,7 +74,7 @@ def encrypt(text, key):
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
+![Hasil Eksekusi](Screenshots/output.png)
 ![Hasil Input](screenshots/input.png)
 ![Hasil Output](screenshots/output.png)
 )
@@ -71,11 +85,12 @@ Hasil eksekusi program Caesar Cipher:
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
 - Pertanyaan 1: …  
 - Pertanyaan 2: …  
+- Pertanyaan 3: …  
 )
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan percobaan, Shamir's Secret Sharing terbukti efektif membagi dan menyembunyikan sebuah rahasia. Rahasia asli hanya berhasil ditemukan kembali ketika cukup banyak pihak menggabungkan bagian mereka, sesuai dengan ketentuan awal. Jika bagian yang dikumpulkan kurang, tidak ada informasi yang bisa diduga tentang rahasia tersebut, sama sekali.
 
 ---
 
