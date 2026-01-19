@@ -15,9 +15,11 @@ Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Teori kriptografi merupakan dasar penting dalam pengamanan komunikasi digital. Kriptografi adalah ilmu yang mempelajari teknik penyandian data agar informasi hanya dapat dibaca oleh pihak yang berwenang. Pada tahap awal, kriptografi menggunakan cipher klasik seperti Caesar Cipher dan Vigenère Cipher yang mengandalkan pergeseran huruf atau penggunaan kunci sederhana untuk menyamarkan pesan.
 
+Salah satu konsep matematika yang mendasari kriptografi adalah aritmetika modular, yaitu operasi matematika dengan sistem sisa pembagian. Aritmetika modular digunakan dalam proses enkripsi dan dekripsi untuk membatasi nilai bilangan dalam rentang tertentu, misalnya pada representasi huruf alfabet. Konsep ini menjadi fondasi bagi algoritma kriptografi modern.
+
+Dalam perkembangannya, kriptografi modern menggabungkan teori matematika, algoritma, dan protokol keamanan seperti TLS, yang memanfaatkan enkripsi simetris, asimetris, serta fungsi hash. Penerapan teori-teori tersebut memungkinkan terciptanya komunikasi digital yang aman, menjaga kerahasiaan, integritas, dan keaslian data.
 ---
 
 ## 3. Alat dan Bahan
