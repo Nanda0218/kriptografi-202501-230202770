@@ -1,15 +1,17 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
+Minggu ke-: 12 
 Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Nama: [Nanda Erdi Pratama]  
+NIM: [230202770]  
+Kelas: [5IKRB]  
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
+Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:  
+1. Menganalisis penggunaan kriptografi pada **email** dan **SSL/TLS**.  
+2. Menjelaskan enkripsi dalam transaksi **e-commerce**.  
+3. Mengevaluasi isu **etika & privasi** dalam penggunaan kriptografi di kehidupan sehari-hari.  
 ---
 
 ## 2. Dasar Teori
@@ -56,7 +58,7 @@ def encrypt(text, key):
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
+![Hasil Eksekusi](Screenshots/Hasil.png)
 ![Hasil Input](screenshots/input.png)
 ![Hasil Output](screenshots/output.png)
 )
@@ -65,8 +67,9 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
+- Pertanyaan 1: 
+- Pertanyaan 2: 
+- Pertanyaan 3:   
 )
 ---
 
