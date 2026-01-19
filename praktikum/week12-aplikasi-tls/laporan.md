@@ -67,15 +67,21 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: 
-- Pertanyaan 2: 
-- Pertanyaan 3:   
+- Pertanyaan 1: Perbedaan utama antara HTTP dan HTTPS terletak pada keamanan data.
+HTTP (HyperText Transfer Protocol) mengirimkan data tanpa enkripsi, sehingga informasi dapat dengan mudah disadap atau dimodifikasi oleh pihak tidak berwenang.
+Sementara itu, HTTPS (HyperText Transfer Protocol Secure) menggunakan TLS/SSL untuk mengenkripsi data, sehingga komunikasi antara klien dan server menjadi aman, terjaga kerahasiaannya, dan terjamin keasliannya.
+- Pertanyaan 2: Sertifikat digital berfungsi untuk memverifikasi identitas server dan mencegah serangan man-in-the-middle.
+Dalam komunikasi TLS, sertifikat digital:
+1.Menjamin bahwa server yang diakses adalah server yang sah
+2.Menyediakan kunci publik untuk proses enkripsi
+3.Diterbitkan oleh Certificate Authority (CA) yang terpercaya
+Dengan adanya sertifikat digital, pengguna dapat mempercayai keamanan dan keaslian layanan yang diakses.
+- Pertanyaan 3: Kriptografi mendukung privasi dengan cara melindungi kerahasiaan, integritas, dan autentikasi data dalam komunikasi digital, sehingga informasi pribadi tidak mudah diakses oleh pihak yang tidak berwenang. Namun, di sisi lain kriptografi juga menimbulkan tantangan hukum dan etika, karena teknologi enkripsi dapat digunakan untuk menyembunyikan aktivitas ilegal, menghambat proses penegakan hukum, dan memicu perdebatan mengenai keseimbangan antara hak privasi individu dan kepentingan keamanan publik.
 )
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-
+Berdasarkan percobaan, penerapan TLS pada aplikasi e-commerce terbukti mampu mengamankan proses komunikasi data antara pengguna dan server melalui mekanisme enkripsi dan autentikasi. TLS melindungi informasi sensitif seperti data login dan transaksi dari penyadapan maupun manipulasi. Dengan demikian, penggunaan TLS meningkatkan kepercayaan pengguna serta keamanan sistem e-commerce secara keseluruhan.
 ---
 
 ## 9. Daftar Pustaka
