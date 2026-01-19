@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 12 
-Topik: [judul praktikum]  
+Topik: [Aplikasi TLS & E-commerce]  
 Nama: [Nanda Erdi Pratama]  
 NIM: [230202770]  
 Kelas: [5IKRB]  
