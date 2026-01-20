@@ -71,9 +71,9 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1:   
-- Pertanyaan 2: 
-- Pertanyaan 3: 
+- Pertanyaan 1: Fungsi utama ERC20 adalah sebagai standar token yang menyatukan cara pembuatan, pengelolaan, dan pertukaran token di blockchain Ethereum. Dengan adanya ERC20, token dapat dengan mudah digunakan oleh berbagai dompet, exchange, dan aplikasi terdesentralisasi (dApp) tanpa perlu penyesuaian khusus, sehingga meningkatkan interoperabilitas dalam ekosistem blockchain.
+- Pertanyaan 2: Mekanisme transfer token dilakukan melalui fungsi transfer, di mana smart contract akan memeriksa saldo pengirim, mengurangi saldo tersebut, lalu menambahkan jumlah token ke saldo penerima. Untuk transfer atas nama pihak lain, digunakan mekanisme approve dan transferFrom, yang memungkinkan pihak ketiga mentransfer token sesuai batas (allowance) yang telah disetujui oleh pemilik token.
+- Pertanyaan 3: Risiko utama dalam implementasi smart contract meliputi bug kode, kesalahan logika, dan celah keamanan seperti reentrancy atau kesalahan validasi input. Mitigasi dapat dilakukan dengan menggunakan standar dan library tepercaya (misalnya OpenZeppelin), melakukan audit kode, pengujian menyeluruh (testing dan code review), serta menerapkan prinsip least privilege dan fail-safe dalam desain kontrak.
 )
 ---
 
@@ -91,12 +91,11 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+```
+commit af26823712d9679345d1ccb71921c5de24f5425b (HEAD -> main, origin/main, origin/HEAD)
+Author: Nanda0218 <nandaerdipratama29@gmail.com>
+Date:   Tue Jan 20 14:51:27 2026 +0700
+
+    week15-tinycoin-erc20
 ```
