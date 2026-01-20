@@ -83,9 +83,9 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-- Pertanyaan 3: …  
+- Pertanyaan 1: Keuntungan utama Shamir Secret Sharing (SSS) adalah tidak ada satu pihak pun yang memegang kunci lengkap. Kunci dibagi menjadi beberapa share yang secara individual tidak memiliki makna dan tidak dapat digunakan untuk membuka rahasia. Berbeda dengan membagikan salinan kunci secara langsung, SSS mengurangi risiko kebocoran karena kompromi satu atau beberapa pihak tidak langsung menyebabkan rahasia terbongkar.
+- Pertanyaan 2: Threshold (k) menentukan jumlah minimum share yang harus dikumpulkan untuk merekonstruksi rahasia. Nilai ini berfungsi sebagai keseimbangan antara keamanan dan ketersediaan: semakin besar nilai k, semakin sulit bagi penyerang untuk mendapatkan cukup share, namun semakin rendah toleransi terhadap kehilangan share. Dengan demikian, threshold menjadi parameter utama dalam mengontrol tingkat keamanan sistem secret sharing.
+- Pertanyaan 3: Salah satu contoh nyata penggunaan SSS adalah pengamanan kunci privat dompet kripto perusahaan. Kunci privat dibagi kepada beberapa eksekutif atau sistem berbeda, dan hanya dapat digunakan jika minimal k pihak menyetujui dan menggabungkan share mereka. Pendekatan ini mencegah penyalahgunaan kunci oleh satu individu dan meningkatkan keamanan aset digital secara signifikan.
 )
 ---
 
