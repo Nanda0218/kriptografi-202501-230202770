@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 14
-Topik: [judul praktikum]  
+Topik: [Analisis Serangan Kriptografi]  
 Nama: [Nanda Erdi Pratama]  
 NIM: [230202770]  
 Kelas: [5IKRB]  
@@ -8,14 +8,19 @@ Kelas: [5IKRB]
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:  
+1. Mengidentifikasi jenis serangan pada sistem informasi nyata.  
+2. Mengevaluasi kelemahan algoritma kriptografi yang digunakan.  
+3. Memberikan rekomendasi algoritma kriptografi yang sesuai untuk perbaikan keamanan. 
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Kriptografi merupakan ilmu yang mempelajari teknik pengamanan informasi agar hanya pihak yang berwenang yang dapat mengaksesnya. Pada kriptografi klasik, pengamanan data dilakukan menggunakan cipher klasik seperti Caesar Cipher, Vigenère Cipher, dan Substitution Cipher, yang bekerja dengan cara mengganti atau menggeser huruf berdasarkan aturan tertentu. Kelemahan utama cipher klasik terletak pada ruang kunci yang kecil dan pola yang mudah dianalisis, sehingga rentan terhadap serangan seperti brute force dan frequency analysis. Hal ini mendorong berkembangnya kriptografi modern yang mengandalkan perhitungan matematis yang lebih kompleks.
 
+Kriptografi modern banyak menggunakan konsep aritmetika modular, yaitu operasi matematika dengan sisa pembagian (modulo). Konsep ini menjadi dasar algoritma populer seperti RSA, Diffie–Hellman, dan ElGamal, di mana keamanan sistem bergantung pada kesulitan masalah matematika tertentu, seperti faktorisasi bilangan prima besar atau logaritma diskret. Serangan kriptografi modern umumnya berusaha mengeksploitasi kelemahan implementasi atau keterbatasan komputasi, bukan sekadar menebak kunci secara langsung.
+
+Serangan kriptografi dapat diklasifikasikan menjadi beberapa jenis, antara lain ciphertext-only attack, known-plaintext attack, chosen-plaintext attack, dan brute force attack. Selain itu, terdapat pula serangan berbasis implementasi seperti side-channel attack yang memanfaatkan informasi fisik (waktu eksekusi, konsumsi daya). Oleh karena itu, sistem kriptografi yang aman tidak hanya membutuhkan algoritma yang kuat secara teori, tetapi juga implementasi yang benar dan pengelolaan kunci yang baik.
 ---
 
 ## 3. Alat dan Bahan
@@ -65,13 +70,14 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
+- Pertanyaan 1: 
+- Pertanyaan 2: 
+- Pertanyaan 3:
 )
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan hasil percobaan, dapat disimpulkan bahwa tingkat keamanan suatu algoritma kriptografi sangat bergantung pada kompleksitas algoritma dan panjang kunci yang digunakan. Percobaan menunjukkan bahwa cipher sederhana lebih mudah diserang dibandingkan algoritma kriptografi modern yang berbasis perhitungan matematis kompleks. Oleh karena itu, pemilihan algoritma dan implementasi yang tepat sangat penting untuk menjaga kerahasiaan dan keamanan data.
 
 ---
 
