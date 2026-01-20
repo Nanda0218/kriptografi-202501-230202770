@@ -119,7 +119,7 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 8. Kesimpulan
-Berdasarkan percobaan TinyChain dengan mekanisme Proof of Work, dapat disimpulkan bahwa fungsi hash dan pencarian *nonce* berperan penting dalam menjaga integritas dan keamanan data blockchain. Proses PoW terbukti mampu mencegah manipulasi transaksi karena membutuhkan usaha komputasi yang tinggi untuk setiap perubahan blok. Namun, percobaan ini juga menunjukkan bahwa PoW kurang efisien dari sisi energi dan waktu komputasi.
+Berdasarkan percobaan TinyChain dengan mekanisme Proof of Work, dapat disimpulkan bahwa fungsi hash dan pencarian nonce berperan penting dalam menjaga integritas dan keamanan data blockchain. Proses PoW terbukti mampu mencegah manipulasi transaksi karena membutuhkan usaha komputasi yang tinggi untuk setiap perubahan blok. Namun, percobaan ini juga menunjukkan bahwa PoW kurang efisien dari sisi energi dan waktu komputasi.
 
 ---
 
