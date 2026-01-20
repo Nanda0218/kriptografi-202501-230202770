@@ -70,9 +70,9 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: 
-- Pertanyaan 2: 
-- Pertanyaan 3:
+- Pertanyaan 1: Banyak sistem lama dirancang saat kemampuan komputasi masih terbatas, sehingga menggunakan panjang kunci yang pendek, algoritma hash lemah (misalnya MD5 atau SHA-1), serta tanpa mekanisme proteksi tambahan seperti salt dan rate limiting. Akibatnya, penyerang modern dengan perangkat keras cepat dan wordlist besar dapat dengan mudah melakukan brute force atau dictionary attack dalam waktu singkat.
+- Pertanyaan 2: Kelemahan algoritma berasal dari desain matematis algoritma itu sendiri, misalnya algoritma yang sudah terbukti dapat dipecahkan secara kriptanalisis. Sementara itu, kelemahan implementasi muncul karena kesalahan penerapan, seperti manajemen kunci yang buruk, penggunaan mode enkripsi yang salah, atau kebocoran informasi melalui side-channel. Algoritma yang kuat tetap dapat menjadi tidak aman jika diimplementasikan secara keliru.
+- Pertanyaan 3: Organisasi perlu menggunakan algoritma dan standar kriptografi terkini, melakukan pembaruan dan audit keamanan secara berkala, serta menerapkan manajemen kunci yang kuat. Selain itu, penting untuk mengikuti perkembangan ancaman terbaru, termasuk kesiapan terhadap kriptografi pasca-kuantum, agar sistem tetap aman dalam jangka panjang.
 )
 ---
 
@@ -90,12 +90,11 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+```
+commit ff99d561a9db4989bd60c77b00044120f9e40ba8 
+Author: Nanda0218 <nandaerdipratama29@gmail.com>
+Date:   Tue Jan 20 14:35:50 2026 +0700
+
+    week14-analisis-serangan
 ```
